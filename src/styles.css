@@ -13,10 +13,8 @@ body {
   border-radius: var(--card-border-radius);
   filter: drop-shadow(var(--card-shadow));
   height: 528px;
+  transform: rotateX(15deg);
   width: var(--card-width);
-  
-  /* background-color: red; */
-  /* border: 1px solid red; */
 }
 
 .inner-card {
@@ -24,6 +22,12 @@ body {
 }
 
 .cards-wrapper {
+  perspective: 800px;
+}
+
+.main {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }

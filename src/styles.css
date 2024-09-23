@@ -13,10 +13,18 @@ body {
   border-radius: var(--card-border-radius);
   filter: drop-shadow(var(--card-shadow));
   height: 528px;
-  transform: rotateX(15deg);
+  /* transform: rotateX(15deg); */
+  transform: rotateX(var(--x-rotation)) rotateY(var(--y-rotation));
   width: var(--card-width);
   user-select: none;
   cursor: pointer;
+  position: relative;
+}
+
+.card:hover{
+  scale: 1.1;
+  transition-property: transform;
+  transition: all 0.2s ease-out;
 }
 
 .inner-card {
@@ -32,4 +40,16 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+
+.glare { 
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: var(--card-border-radius);
+}
+
+.card:hover .glare {
+  /* background: radial-gradient(at center, rgba(255, 255, 255, 0.3) 20%, transparent 80%); */
+  background: radial-gradient(at var(--x) var(--y), rgba(255, 255, 255, 0.3) 20%, transparent 80%);
 }

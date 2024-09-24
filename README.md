@@ -75,3 +75,8 @@ Claro! Vamos analisar a fórmula de rotação com alguns exemplos práticos.
 
 ### Resumo
 As fórmulas de `xRotation` e `yRotation` ajustam a rotação do elemento com base na posição do cursor. A rotação é centralizada em 0 graus quando o cursor está no centro do elemento e varia de -10 a 10 graus conforme o cursor se move para os cantos do elemento.
+
+----
+
+## Links
+https://www.frontend.fyi/v/css-3d-perspective-animations
